@@ -35,8 +35,8 @@ def prepare_kaggle_dataset():
     print("=" * 60)
     
     # Copy training files
-    train_file = DATASET_DIR.parent / "outputs" / "vedrishi_train.jsonl"
-    val_file = DATASET_DIR.parent / "outputs" / "vedrishi_val.jsonl"
+    train_file = Path(__file__).parent.parent / "training" / "outputs" / "vedrishi_train.jsonl"
+    val_file = Path(__file__).parent.parent / "training" / "outputs" / "vedrishi_val.jsonl"
     
     # Copy to kaggle-dataset
     import shutil
@@ -130,7 +130,7 @@ def print_manual_instructions():
     print("   - Dataset name: vedrishi-training-dataset")
     print("   - Title: VedRishi AI Training Dataset")
     print("   - License: CC0-1.0")
-    print("3. Upload files from: {KAGGLE_DIR}")
+    print(f"3. Upload files from: {KAGGLE_DIR}")
     print("4. Click 'Create Dataset'")
     print("5. Copy the dataset URL")
     print("6. Update notebook with your dataset URL")

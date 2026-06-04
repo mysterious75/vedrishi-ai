@@ -35,7 +35,7 @@ qlora:
 # ===========================
 training:
   output_dir: "./checkpoints"
-  num_train_epochs: 2  # Max to avoid overfitting
+  num_train_epochs: 3  # 3 epochs as per unsloth_config.json
   per_device_train_batch_size: 4
   gradient_accumulation_steps: 4
   gradient_checkpointing: true
@@ -43,7 +43,7 @@ training:
   weight_decay: 0.01
   warmup_steps: 100
   lr_scheduler_type: "cosine"
-  max_grad_norm: 0.3
+  max_grad_norm: 1.0
   fp16: false
   bf16: true  # Use bf16 for better precision
   logging_steps: 10
@@ -57,8 +57,8 @@ training:
 # DATASET CONFIGURATION
 # ===========================
 dataset:
-  train_file: "../dataset/instruction-pairs/instruction_pairs.jsonl"
-  val_split: 0.1  # 10% for validation
+  train_file: "../outputs/vedrishi_train.jsonl"
+  val_file: "../outputs/vedrishi_val.jsonl"
   max_seq_length: 2048
   preprocessing_num_workers: 4
 

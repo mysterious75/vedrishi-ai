@@ -1,18 +1,17 @@
 {
-  "total_entries": 165565,
+  "total_entries": 165443,
   "by_text_type": {
     "gita": 701,
     "ramayana": 22432,
-    "mahabharata": 142432
+    "mahabharata": 142310
   },
   "by_source": {
     "DharmicData": 701,
     "DharmicData_Ramayana": 22432,
-    "DharmicData_Mahabharata": 73751,
+    "DharmicData_Mahabharata": 73629,
     "VedicRAG_AI": 68681
   },
   "with_hindi": 700,
   "with_english": 69382,
-  "with_commentaries": 701,
-  "timestamp": "2026-06-04T07:38:33.555168"
+  "with_commentaries": 701
 }

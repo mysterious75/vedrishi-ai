@@ -149,7 +149,7 @@ def load_vedicrag_mahabharata():
                     elif line.startswith('Verse:'):
                         try:
                             verse_data['verse'] = int(line[6:].strip())
-                        except:
+                        except (ValueError, TypeError, KeyError):
                             verse_data['verse'] = 0
                     elif line.startswith('Sanskrit:'):
                         verse_data['sanskrit'] = line[9:].strip()

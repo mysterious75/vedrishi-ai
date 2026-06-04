@@ -1,0 +1,23 @@
+# VedRishi AI - Python Dependencies
+# ==================================
+
+# --- Core ML / Training ---
+torch
+transformers
+datasets
+accelerate
+peft
+bitsandbytes
+trl
+unsloth
+
+# --- RAG ---
+chromadb
+
+# --- Data Processing / Utilities ---
+requests
+huggingface_hub
+kaggle
+
+# --- Standard Library (included with Python, listed for completeness) ---
+# json, os, sys, re, hashlib, pathlib, datetime, random, subprocess, shutil

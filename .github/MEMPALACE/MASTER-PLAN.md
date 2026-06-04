@@ -1,4 +1,4 @@
-# VEDRISHI AI - MASTER MEMEPALACE
+# VEDRISHI AI - MASTER MEMPALACE
 > Kya kaam hai, kyu hai, kaise karna hai - sab yahan
 
 ---
@@ -81,5 +81,5 @@
 3. Har step document karna hai
 4. Lessons learned txt files mein dalna hai
 5. Research saari researches txt files mein
-6. GitHub Memepalace se track karna hai
+6. GitHub MemPalace se track karna hai
 7. Quality > Quantity (har cheez well-structured)

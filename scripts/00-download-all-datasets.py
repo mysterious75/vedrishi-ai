@@ -4,8 +4,6 @@ VEDRISHI AI - Master Dataset Downloader
 Downloads ALL datasets from all sources
 """
 
-import os
-import sys
 import json
 import subprocess
 from pathlib import Path

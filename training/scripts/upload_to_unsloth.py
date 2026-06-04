@@ -5,13 +5,14 @@ Run this script after setting up Unsloth Cloud account
 """
 
 import json
+import os
 import requests
 from pathlib import Path
 
 # Configuration
-UNSLOTH_API_KEY = "YOUR_UNSLOTH_API_KEY"  # Get from https://unsloth.ai
+UNSLOTH_API_KEY = os.environ.get("UNSLOTH_API_KEY", "")  # Get from https://unsloth.ai
 PROJECT_NAME = "vedrishi-ai"
-DATASET_DIR = Path(__file__).parent.parent / "dataset" / "instruction-pairs"
+DATASET_DIR = Path(__file__).parent.parent / "outputs"
 
 def upload_to_unsloth():
     """Upload dataset to Unsloth Cloud"""

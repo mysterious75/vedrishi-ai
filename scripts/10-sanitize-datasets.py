@@ -151,7 +151,10 @@ def sanitize_jsonl_file(input_file, output_file):
             if 'english' in entry:
                 entry['english'] = sanitize_text(entry['english'])
             if 'commentaries' in entry:
-                entry['commentaries'] = [sanitize_text(c) for c in entry['commentaries']]
+                if isinstance(entry.get('commentaries'), dict):
+                    entry['commentaries'] = {k: sanitize_text(v) for k, v in entry['commentaries'].items()}
+                elif isinstance(entry.get('commentaries'), list):
+                    entry['commentaries'] = [sanitize_text(c) for c in entry['commentaries']]
             
             # Sanitize metadata
             if 'metadata' in entry:
