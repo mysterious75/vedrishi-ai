@@ -14,6 +14,11 @@ FINAL_DIR = Path(__file__).parent.parent / "dataset" / "final"
 OUTPUT_DIR = Path(__file__).parent.parent / "dataset" / "instruction-pairs"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+# Use Hindi-enriched dataset if available
+MAIN_DATASET = FINAL_DIR / "vedrishi_complete_hindi.jsonl"
+if not MAIN_DATASET.exists():
+    MAIN_DATASET = FINAL_DIR / "vedrishi_complete.jsonl"
+
 LOG_FILE = OUTPUT_DIR / "generation_log.txt"
 
 def log(message):
@@ -276,11 +281,11 @@ def save_pairs(pairs, filename):
 
 def main():
     """Main function"""
-    log("VEDRISHI AI - INSTRUCTION PAIR GENERATOR")
+    log("VEDRISHI AI - INSTRUCTION PAIR GENERATOR (V2 - Hindi Enhanced)")
     log("=" * 60)
     
     # Load final dataset
-    final_file = FINAL_DIR / "vedrishi_complete.jsonl"
+    final_file = MAIN_DATASET
     all_verses = []
     
     with open(final_file, 'r', encoding='utf-8') as f:
@@ -297,11 +302,16 @@ def main():
     
     log(f"Gita: {len(gita)}, Ramayana: {len(ramayana)}, Mahabharata: {len(mahabharata)}")
     
-    # Generate pairs
+    # Count Hindi availability
+    for name, verses in [("Gita", gita), ("Ramayana", ramayana), ("Mahabharata", mahabharata)]:
+        with_hindi = sum(1 for v in verses if v.get('hindi') and len(str(v.get('hindi', ''))) > 10)
+        log(f"  {name} with Hindi: {with_hindi}/{len(verses)}")
+    
+    # Generate pairs - increased caps for Hindi availability
     all_pairs = []
-    all_pairs.extend(generate_gita_pairs(gita))
-    all_pairs.extend(generate_ramayana_pairs(ramayana))
-    all_pairs.extend(generate_mahabharata_pairs(mahabharata))
+    all_pairs.extend(generate_gita_pairs(gita, max_pairs=50000))
+    all_pairs.extend(generate_ramayana_pairs(ramayana, max_pairs=50000))
+    all_pairs.extend(generate_mahabharata_pairs(mahabharata, max_pairs=50000))
     
     log(f"\nTotal instruction pairs: {len(all_pairs)}")
     

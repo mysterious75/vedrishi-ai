@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-06-04T08:40:34.071861",
+  "total_entries": 165443,
+  "mahabharata": {
+    "total": 142310,
+    "with_hindi": 51077,
+    "without_hindi": 91233,
+    "hindi_coverage_pct": 35.89,
+    "merge_details": {
+      "updated": 51077,
+      "verse_matched": 476,
+      "chapter_commentary": 51077,
+      "not_found": 69662
+    }
+  },
+  "ramayana": {
+    "total": 22432,
+    "with_hindi": 12146,
+    "without_hindi": 10286,
+    "hindi_coverage_pct": 54.15,
+    "merge_details": {
+      "updated": 12146,
+      "matched": 12146,
+      "not_found": 10286
+    }
+  },
+  "gita": {
+    "total": 701,
+    "with_hindi": 700,
+    "without_hindi": 1
+  },
+  "parsed_hindi_data": {
+    "mahabharata_verses": 98701,
+    "ramayana_verses": 19828
+  },
+  "output_files": {
+    "complete_hindi": "D:\\hacker\\vedrishi\\vedrishi-ai\\dataset\\final\\vedrishi_complete_hindi.jsonl",
+    "mahabharata_hindi": "D:\\hacker\\vedrishi\\vedrishi-ai\\dataset\\final\\vedrishi_mahabharata_hindi.jsonl",
+    "ramayana_hindi": "D:\\hacker\\vedrishi\\vedrishi-ai\\dataset\\final\\vedrishi_ramayana_hindi.jsonl"
+  }
+}

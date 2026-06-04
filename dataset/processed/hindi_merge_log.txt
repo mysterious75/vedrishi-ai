@@ -1,0 +1,492 @@
+[2026-06-04 08:35:24] ============================================================
+[2026-06-04 08:35:24] VEDRISHI AI - HINDI TRANSLATION MERGER
+[2026-06-04 08:35:24] Started: 2026-06-04T08:35:24.310969
+[2026-06-04 08:35:24] ============================================================
+[2026-06-04 08:35:24] ============================================================
+[2026-06-04 08:35:24] PHASE 1: Parsing Mahabharata Hindi files
+[2026-06-04 08:35:24] ============================================================
+[2026-06-04 08:35:24] Found 18 Hindi files: ['1.utf8', '2.utf8', '3.utf8', '4.utf8', '5.utf8', '6.utf8', '7.utf8', '8.utf8', '9.utf8', '10.utf8', '11.utf8', '12.utf8', '13.utf8', '14.utf8', '15.utf8', '16.utf8', '17.utf8', '18.utf8']
+[2026-06-04 08:35:24]   Processing 1.utf8 (Parva 1: Adi Parva)
+[2026-06-04 08:35:24]   Processing 2.utf8 (Parva 2: Sabha Parva)
+[2026-06-04 08:35:24]   Processing 3.utf8 (Parva 3: Vana Parva)
+[2026-06-04 08:35:24]   Processing 4.utf8 (Parva 4: Virata Parva)
+[2026-06-04 08:35:24]   Processing 5.utf8 (Parva 5: Udyoga Parva)
+[2026-06-04 08:35:25]   Processing 6.utf8 (Parva 6: Bhishma Parva)
+[2026-06-04 08:35:25]   Processing 7.utf8 (Parva 7: Drona Parva)
+[2026-06-04 08:35:25]   Processing 8.utf8 (Parva 8: Karna Parva)
+[2026-06-04 08:35:25]   Processing 9.utf8 (Parva 9: Shalya Parva)
+[2026-06-04 08:35:25]   Processing 10.utf8 (Parva 10: Sauptika Parva)
+[2026-06-04 08:35:25]   Processing 11.utf8 (Parva 11: Stri Parva)
+[2026-06-04 08:35:25]   Processing 12.utf8 (Parva 12: Shanti Parva)
+[2026-06-04 08:35:25]   Processing 13.utf8 (Parva 13: Anushasana Parva)
+[2026-06-04 08:35:26]   Processing 14.utf8 (Parva 14: Ashvamedhika Parva)
+[2026-06-04 08:35:26]   Processing 15.utf8 (Parva 15: Ashramavasika Parva)
+[2026-06-04 08:35:26]   Processing 16.utf8 (Parva 16: Mausala Parva)
+[2026-06-04 08:35:26]   Processing 17.utf8 (Parva 17: Mahaprasthanika Parva)
+[2026-06-04 08:35:26]   Processing 18.utf8 (Parva 18: Svargarohana Parva)
+[2026-06-04 08:35:26] 
+  Total chapters with data: 2311
+[2026-06-04 08:35:26]   Total verse references found: 98701
+[2026-06-04 08:35:26]     Parva 1 (Adi Parva): 260 chapters, 11259 verses
+[2026-06-04 08:35:26]     Parva 2 (Sabha Parva): 103 chapters, 4364 verses
+[2026-06-04 08:35:26]     Parva 3 (Vana Parva): 315 chapters, 12492 verses
+[2026-06-04 08:35:26]     Parva 4 (Virata Parva): 78 chapters, 3575 verses
+[2026-06-04 08:35:26]     Parva 5 (Udyoga Parva): 196 chapters, 6949 verses
+[2026-06-04 08:35:26]     Parva 6 (Bhishma Parva): 122 chapters, 6039 verses
+[2026-06-04 08:35:26]     Parva 7 (Drona Parva): 200 chapters, 10244 verses
+[2026-06-04 08:35:26]     Parva 8 (Karna Parva): 101 chapters, 5071 verses
+[2026-06-04 08:35:26]     Parva 9 (Shalya Parva): 66 chapters, 3665 verses
+[2026-06-04 08:35:26]     Parva 10 (Sauptika Parva): 18 chapters, 833 verses
+[2026-06-04 08:35:26]     Parva 11 (Stri Parva): 27 chapters, 840 verses
+[2026-06-04 08:35:26]     Parva 12 (Shanti Parva): 375 chapters, 15525 verses
+[2026-06-04 08:35:26]     Parva 13 (Anushasana Parva): 274 chapters, 11363 verses
+[2026-06-04 08:35:26]     Parva 14 (Ashvamedhika Parva): 118 chapters, 4604 verses
+[2026-06-04 08:35:26]     Parva 15 (Ashramavasika Parva): 9 chapters, 305 verses
+[2026-06-04 08:35:26]     Parva 16 (Mausala Parva): 41 chapters, 1118 verses
+[2026-06-04 08:35:26]     Parva 17 (Mahaprasthanika Parva): 3 chapters, 113 verses
+[2026-06-04 08:35:26]     Parva 18 (Svargarohana Parva): 5 chapters, 342 verses
+[2026-06-04 08:35:26] 
+============================================================
+[2026-06-04 08:35:26] PHASE 2: Searching for Ramayana Hindi resources
+[2026-06-04 08:35:26] ============================================================
+[2026-06-04 08:35:26]   Found Valmiki_Ramayan_Dataset - checking for Hindi translations...
+[2026-06-04 08:35:26]   Loaded 23402 entries from Valmiki dataset
+[2026-06-04 08:35:26]   Translation field appears to be Hindi (46/100 entries have Hindi markers)
+[2026-06-04 08:35:26]   Extracted 19828 Hindi gloss entries
+[2026-06-04 08:35:26]   Found snskrt-ramayan directory - checking for Hindi...
+[2026-06-04 08:35:28]   snskrt-ramayan sample keys: ['Kanda', 'Sarga', 'shlok_no', 'shlok', 'translation']
+[2026-06-04 08:35:29] 
+============================================================
+[2026-06-04 08:35:29] PHASE 3: Loading existing dataset
+[2026-06-04 08:35:29] ============================================================
+[2026-06-04 08:35:31]   Loaded 165443 total entries
+[2026-06-04 08:35:31]     Mahabharata: 142310
+[2026-06-04 08:35:31]     Ramayana: 22432
+[2026-06-04 08:35:31]     Gita: 701
+[2026-06-04 08:35:31] 
+----------------------------------------
+[2026-06-04 08:35:31] Merging Mahabharata Hindi...
+[2026-06-04 08:35:32]   Built index of 90602 unique Sanskrit verses from Hindi files
+[2026-06-04 08:35:32]   Updated: 0
+[2026-06-04 08:35:32]   Matched by verse: 0
+[2026-06-04 08:35:32]   Assigned chapter commentary: 0
+[2026-06-04 08:35:32]   Chapter not found: 142310
+[2026-06-04 08:35:32] 
+----------------------------------------
+[2026-06-04 08:35:32] Merging Ramayana Hindi...
+[2026-06-04 08:35:33]   Matched and updated: 12146
+[2026-06-04 08:35:33]   Not found: 10286
+[2026-06-04 08:35:33] 
+----------------------------------------
+[2026-06-04 08:35:33] Generating Mahabharata Hindi standalone dataset...
+[2026-06-04 08:35:34]   Saved 98701 verses to D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_mahabharata_hindi.jsonl
+[2026-06-04 08:35:34] 
+----------------------------------------
+[2026-06-04 08:35:34] Generating Ramayana Hindi standalone dataset...
+[2026-06-04 08:35:35]   Saved 19828 verses to D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_ramayana_hindi.jsonl
+[2026-06-04 08:35:35] 
+----------------------------------------
+[2026-06-04 08:35:35] Saving merged dataset...
+[2026-06-04 08:35:37]   Saved 165443 entries to D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_complete_hindi.jsonl
+[2026-06-04 08:35:37] 
+----------------------------------------
+[2026-06-04 08:35:37] Computing statistics...
+[2026-06-04 08:35:37]   Statistics saved to D:\hacker\vedrishi\vedrishi-ai\dataset\final\hindi_merge_stats.json
+[2026-06-04 08:35:37] 
+============================================================
+[2026-06-04 08:35:37] HINDI MERGE SUMMARY
+[2026-06-04 08:35:37] ============================================================
+[2026-06-04 08:35:37]   Total entries in merged dataset: 165443
+[2026-06-04 08:35:37] 
+[2026-06-04 08:35:37]   MAHABHARATA:
+[2026-06-04 08:35:37]     Total: 142310
+[2026-06-04 08:35:37]     With Hindi: 0 (0.0%)
+[2026-06-04 08:35:37]     Parsed verses from Hindi files: 98701
+[2026-06-04 08:35:37] 
+[2026-06-04 08:35:37]   RAMAYANA:
+[2026-06-04 08:35:37]     Total: 22432
+[2026-06-04 08:35:37]     With Hindi: 12146
+[2026-06-04 08:35:37]     Parsed verses from Hindi files: 19828
+[2026-06-04 08:35:37] 
+[2026-06-04 08:35:37]   GITA:
+[2026-06-04 08:35:37]     Total: 701
+[2026-06-04 08:35:37]     With Hindi: 700
+[2026-06-04 08:35:37] 
+[2026-06-04 08:35:37]   OUTPUT FILES:
+[2026-06-04 08:35:37]     1. D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_complete_hindi.jsonl
+[2026-06-04 08:35:37]     2. D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_mahabharata_hindi.jsonl
+[2026-06-04 08:35:37]     3. D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_ramayana_hindi.jsonl
+[2026-06-04 08:35:37]     4. D:\hacker\vedrishi\vedrishi-ai\dataset\final\hindi_merge_stats.json
+[2026-06-04 08:35:37] 
+============================================================
+[2026-06-04 08:35:37] HINDI MERGE COMPLETE
+[2026-06-04 08:35:37] ============================================================
+[2026-06-04 08:36:09] ============================================================
+[2026-06-04 08:36:09] VEDRISHI AI - HINDI TRANSLATION MERGER
+[2026-06-04 08:36:09] Started: 2026-06-04T08:36:09.386264
+[2026-06-04 08:36:09] ============================================================
+[2026-06-04 08:36:09] ============================================================
+[2026-06-04 08:36:09] PHASE 1: Parsing Mahabharata Hindi files
+[2026-06-04 08:36:09] ============================================================
+[2026-06-04 08:36:09] Found 18 Hindi files: ['1.utf8', '2.utf8', '3.utf8', '4.utf8', '5.utf8', '6.utf8', '7.utf8', '8.utf8', '9.utf8', '10.utf8', '11.utf8', '12.utf8', '13.utf8', '14.utf8', '15.utf8', '16.utf8', '17.utf8', '18.utf8']
+[2026-06-04 08:36:09]   Processing 1.utf8 (Parva 1: Adi Parva)
+[2026-06-04 08:36:09]   Processing 2.utf8 (Parva 2: Sabha Parva)
+[2026-06-04 08:36:09]   Processing 3.utf8 (Parva 3: Vana Parva)
+[2026-06-04 08:36:09]   Processing 4.utf8 (Parva 4: Virata Parva)
+[2026-06-04 08:36:10]   Processing 5.utf8 (Parva 5: Udyoga Parva)
+[2026-06-04 08:36:10]   Processing 6.utf8 (Parva 6: Bhishma Parva)
+[2026-06-04 08:36:10]   Processing 7.utf8 (Parva 7: Drona Parva)
+[2026-06-04 08:36:10]   Processing 8.utf8 (Parva 8: Karna Parva)
+[2026-06-04 08:36:10]   Processing 9.utf8 (Parva 9: Shalya Parva)
+[2026-06-04 08:36:10]   Processing 10.utf8 (Parva 10: Sauptika Parva)
+[2026-06-04 08:36:10]   Processing 11.utf8 (Parva 11: Stri Parva)
+[2026-06-04 08:36:10]   Processing 12.utf8 (Parva 12: Shanti Parva)
+[2026-06-04 08:36:10]   Processing 13.utf8 (Parva 13: Anushasana Parva)
+[2026-06-04 08:36:11]   Processing 14.utf8 (Parva 14: Ashvamedhika Parva)
+[2026-06-04 08:36:11]   Processing 15.utf8 (Parva 15: Ashramavasika Parva)
+[2026-06-04 08:36:11]   Processing 16.utf8 (Parva 16: Mausala Parva)
+[2026-06-04 08:36:11]   Processing 17.utf8 (Parva 17: Mahaprasthanika Parva)
+[2026-06-04 08:36:11]   Processing 18.utf8 (Parva 18: Svargarohana Parva)
+[2026-06-04 08:36:11] 
+  Total chapters with data: 2311
+[2026-06-04 08:36:11]   Total verse references found: 98701
+[2026-06-04 08:36:11]     Parva 1 (Adi Parva): 260 chapters, 11259 verses
+[2026-06-04 08:36:11]     Parva 2 (Sabha Parva): 103 chapters, 4364 verses
+[2026-06-04 08:36:11]     Parva 3 (Vana Parva): 315 chapters, 12492 verses
+[2026-06-04 08:36:11]     Parva 4 (Virata Parva): 78 chapters, 3575 verses
+[2026-06-04 08:36:11]     Parva 5 (Udyoga Parva): 196 chapters, 6949 verses
+[2026-06-04 08:36:11]     Parva 6 (Bhishma Parva): 122 chapters, 6039 verses
+[2026-06-04 08:36:11]     Parva 7 (Drona Parva): 200 chapters, 10244 verses
+[2026-06-04 08:36:11]     Parva 8 (Karna Parva): 101 chapters, 5071 verses
+[2026-06-04 08:36:11]     Parva 9 (Shalya Parva): 66 chapters, 3665 verses
+[2026-06-04 08:36:11]     Parva 10 (Sauptika Parva): 18 chapters, 833 verses
+[2026-06-04 08:36:11]     Parva 11 (Stri Parva): 27 chapters, 840 verses
+[2026-06-04 08:36:11]     Parva 12 (Shanti Parva): 375 chapters, 15525 verses
+[2026-06-04 08:36:11]     Parva 13 (Anushasana Parva): 274 chapters, 11363 verses
+[2026-06-04 08:36:11]     Parva 14 (Ashvamedhika Parva): 118 chapters, 4604 verses
+[2026-06-04 08:36:11]     Parva 15 (Ashramavasika Parva): 9 chapters, 305 verses
+[2026-06-04 08:36:11]     Parva 16 (Mausala Parva): 41 chapters, 1118 verses
+[2026-06-04 08:36:11]     Parva 17 (Mahaprasthanika Parva): 3 chapters, 113 verses
+[2026-06-04 08:36:11]     Parva 18 (Svargarohana Parva): 5 chapters, 342 verses
+[2026-06-04 08:36:11] 
+============================================================
+[2026-06-04 08:36:11] PHASE 2: Searching for Ramayana Hindi resources
+[2026-06-04 08:36:11] ============================================================
+[2026-06-04 08:36:11]   Found Valmiki_Ramayan_Dataset - checking for Hindi translations...
+[2026-06-04 08:36:11]   Loaded 23402 entries from Valmiki dataset
+[2026-06-04 08:36:11]   Translation field appears to be Hindi (46/100 entries have Hindi markers)
+[2026-06-04 08:36:11]   Extracted 19828 Hindi gloss entries
+[2026-06-04 08:36:11]   Found snskrt-ramayan directory - checking for Hindi...
+[2026-06-04 08:36:13]   snskrt-ramayan sample keys: ['Kanda', 'Sarga', 'shlok_no', 'shlok', 'translation']
+[2026-06-04 08:36:14] 
+============================================================
+[2026-06-04 08:36:14] PHASE 3: Loading existing dataset
+[2026-06-04 08:36:14] ============================================================
+[2026-06-04 08:36:16]   Loaded 165443 total entries
+[2026-06-04 08:36:16]     Mahabharata: 142310
+[2026-06-04 08:36:16]     Ramayana: 22432
+[2026-06-04 08:36:16]     Gita: 701
+[2026-06-04 08:36:16] 
+----------------------------------------
+[2026-06-04 08:36:16] Merging Mahabharata Hindi...
+[2026-06-04 08:36:16]   Built index of 90602 unique Sanskrit verses from Hindi files
+[2026-06-04 08:36:29]   Updated: 1183
+[2026-06-04 08:36:29]   Matched by verse: 89
+[2026-06-04 08:36:29]   Assigned chapter commentary: 1183
+[2026-06-04 08:36:29]   Chapter not found: 69713
+[2026-06-04 08:36:29] 
+----------------------------------------
+[2026-06-04 08:36:29] Merging Ramayana Hindi...
+[2026-06-04 08:36:30]   Matched and updated: 12146
+[2026-06-04 08:36:30]   Not found: 10286
+[2026-06-04 08:36:30] 
+----------------------------------------
+[2026-06-04 08:36:30] Generating Mahabharata Hindi standalone dataset...
+[2026-06-04 08:36:31]   Saved 98701 verses to D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_mahabharata_hindi.jsonl
+[2026-06-04 08:36:31] 
+----------------------------------------
+[2026-06-04 08:36:31] Generating Ramayana Hindi standalone dataset...
+[2026-06-04 08:36:32]   Saved 19828 verses to D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_ramayana_hindi.jsonl
+[2026-06-04 08:36:32] 
+----------------------------------------
+[2026-06-04 08:36:32] Saving merged dataset...
+[2026-06-04 08:36:34]   Saved 165443 entries to D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_complete_hindi.jsonl
+[2026-06-04 08:36:34] 
+----------------------------------------
+[2026-06-04 08:36:34] Computing statistics...
+[2026-06-04 08:36:34]   Statistics saved to D:\hacker\vedrishi\vedrishi-ai\dataset\final\hindi_merge_stats.json
+[2026-06-04 08:36:34] 
+============================================================
+[2026-06-04 08:36:34] HINDI MERGE SUMMARY
+[2026-06-04 08:36:34] ============================================================
+[2026-06-04 08:36:34]   Total entries in merged dataset: 165443
+[2026-06-04 08:36:34] 
+[2026-06-04 08:36:34]   MAHABHARATA:
+[2026-06-04 08:36:34]     Total: 142310
+[2026-06-04 08:36:34]     With Hindi: 1183 (0.83%)
+[2026-06-04 08:36:34]     Parsed verses from Hindi files: 98701
+[2026-06-04 08:36:34] 
+[2026-06-04 08:36:34]   RAMAYANA:
+[2026-06-04 08:36:34]     Total: 22432
+[2026-06-04 08:36:34]     With Hindi: 12146
+[2026-06-04 08:36:34]     Parsed verses from Hindi files: 19828
+[2026-06-04 08:36:34] 
+[2026-06-04 08:36:34]   GITA:
+[2026-06-04 08:36:34]     Total: 701
+[2026-06-04 08:36:34]     With Hindi: 700
+[2026-06-04 08:36:34] 
+[2026-06-04 08:36:34]   OUTPUT FILES:
+[2026-06-04 08:36:34]     1. D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_complete_hindi.jsonl
+[2026-06-04 08:36:34]     2. D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_mahabharata_hindi.jsonl
+[2026-06-04 08:36:34]     3. D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_ramayana_hindi.jsonl
+[2026-06-04 08:36:34]     4. D:\hacker\vedrishi\vedrishi-ai\dataset\final\hindi_merge_stats.json
+[2026-06-04 08:36:34] 
+============================================================
+[2026-06-04 08:36:34] HINDI MERGE COMPLETE
+[2026-06-04 08:36:34] ============================================================
+[2026-06-04 08:38:02] ============================================================
+[2026-06-04 08:38:02] VEDRISHI AI - HINDI TRANSLATION MERGER
+[2026-06-04 08:38:02] Started: 2026-06-04T08:38:02.001415
+[2026-06-04 08:38:02] ============================================================
+[2026-06-04 08:38:02] ============================================================
+[2026-06-04 08:38:02] PHASE 1: Parsing Mahabharata Hindi files
+[2026-06-04 08:38:02] ============================================================
+[2026-06-04 08:38:02] Found 18 Hindi files: ['1.utf8', '2.utf8', '3.utf8', '4.utf8', '5.utf8', '6.utf8', '7.utf8', '8.utf8', '9.utf8', '10.utf8', '11.utf8', '12.utf8', '13.utf8', '14.utf8', '15.utf8', '16.utf8', '17.utf8', '18.utf8']
+[2026-06-04 08:38:02]   Processing 1.utf8 (Parva 1: Adi Parva)
+[2026-06-04 08:38:02]   Processing 2.utf8 (Parva 2: Sabha Parva)
+[2026-06-04 08:38:02]   Processing 3.utf8 (Parva 3: Vana Parva)
+[2026-06-04 08:38:02]   Processing 4.utf8 (Parva 4: Virata Parva)
+[2026-06-04 08:38:02]   Processing 5.utf8 (Parva 5: Udyoga Parva)
+[2026-06-04 08:38:02]   Processing 6.utf8 (Parva 6: Bhishma Parva)
+[2026-06-04 08:38:02]   Processing 7.utf8 (Parva 7: Drona Parva)
+[2026-06-04 08:38:02]   Processing 8.utf8 (Parva 8: Karna Parva)
+[2026-06-04 08:38:02]   Processing 9.utf8 (Parva 9: Shalya Parva)
+[2026-06-04 08:38:02]   Processing 10.utf8 (Parva 10: Sauptika Parva)
+[2026-06-04 08:38:02]   Processing 11.utf8 (Parva 11: Stri Parva)
+[2026-06-04 08:38:02]   Processing 12.utf8 (Parva 12: Shanti Parva)
+[2026-06-04 08:38:03]   Processing 13.utf8 (Parva 13: Anushasana Parva)
+[2026-06-04 08:38:03]   Processing 14.utf8 (Parva 14: Ashvamedhika Parva)
+[2026-06-04 08:38:03]   Processing 15.utf8 (Parva 15: Ashramavasika Parva)
+[2026-06-04 08:38:03]   Processing 16.utf8 (Parva 16: Mausala Parva)
+[2026-06-04 08:38:03]   Processing 17.utf8 (Parva 17: Mahaprasthanika Parva)
+[2026-06-04 08:38:03]   Processing 18.utf8 (Parva 18: Svargarohana Parva)
+[2026-06-04 08:38:03] 
+  Total chapters with data: 2312
+[2026-06-04 08:38:03]   Total verse references found: 98701
+[2026-06-04 08:38:03]     Parva 1 (Adi Parva): 260 chapters, 11259 verses
+[2026-06-04 08:38:03]     Parva 2 (Sabha Parva): 103 chapters, 4364 verses
+[2026-06-04 08:38:03]     Parva 3 (Vana Parva): 315 chapters, 12492 verses
+[2026-06-04 08:38:03]     Parva 4 (Virata Parva): 78 chapters, 3575 verses
+[2026-06-04 08:38:03]     Parva 5 (Udyoga Parva): 196 chapters, 6949 verses
+[2026-06-04 08:38:03]     Parva 6 (Bhishma Parva): 122 chapters, 6039 verses
+[2026-06-04 08:38:03]     Parva 7 (Drona Parva): 201 chapters, 10244 verses
+[2026-06-04 08:38:03]     Parva 8 (Karna Parva): 101 chapters, 5071 verses
+[2026-06-04 08:38:03]     Parva 9 (Shalya Parva): 66 chapters, 3665 verses
+[2026-06-04 08:38:03]     Parva 10 (Sauptika Parva): 18 chapters, 833 verses
+[2026-06-04 08:38:03]     Parva 11 (Stri Parva): 27 chapters, 840 verses
+[2026-06-04 08:38:03]     Parva 12 (Shanti Parva): 375 chapters, 15525 verses
+[2026-06-04 08:38:03]     Parva 13 (Anushasana Parva): 274 chapters, 11363 verses
+[2026-06-04 08:38:03]     Parva 14 (Ashvamedhika Parva): 118 chapters, 4604 verses
+[2026-06-04 08:38:03]     Parva 15 (Ashramavasika Parva): 9 chapters, 305 verses
+[2026-06-04 08:38:03]     Parva 16 (Mausala Parva): 41 chapters, 1118 verses
+[2026-06-04 08:38:03]     Parva 17 (Mahaprasthanika Parva): 3 chapters, 113 verses
+[2026-06-04 08:38:03]     Parva 18 (Svargarohana Parva): 5 chapters, 342 verses
+[2026-06-04 08:38:03] 
+============================================================
+[2026-06-04 08:38:03] PHASE 2: Searching for Ramayana Hindi resources
+[2026-06-04 08:38:03] ============================================================
+[2026-06-04 08:38:03]   Found Valmiki_Ramayan_Dataset - checking for Hindi translations...
+[2026-06-04 08:38:03]   Loaded 23402 entries from Valmiki dataset
+[2026-06-04 08:38:03]   Translation field appears to be Hindi (46/100 entries have Hindi markers)
+[2026-06-04 08:38:03]   Extracted 19828 Hindi gloss entries
+[2026-06-04 08:38:03]   Found snskrt-ramayan directory - checking for Hindi...
+[2026-06-04 08:38:06]   snskrt-ramayan sample keys: ['Kanda', 'Sarga', 'shlok_no', 'shlok', 'translation']
+[2026-06-04 08:38:06] 
+============================================================
+[2026-06-04 08:38:06] PHASE 3: Loading existing dataset
+[2026-06-04 08:38:06] ============================================================
+[2026-06-04 08:38:08]   Loaded 165443 total entries
+[2026-06-04 08:38:08]     Mahabharata: 142310
+[2026-06-04 08:38:08]     Ramayana: 22432
+[2026-06-04 08:38:08]     Gita: 701
+[2026-06-04 08:38:08] 
+----------------------------------------
+[2026-06-04 08:38:08] Merging Mahabharata Hindi...
+[2026-06-04 08:38:09]   Built index of 90602 unique Sanskrit verses from Hindi files
+[2026-06-04 08:38:27]   Updated: 51077
+[2026-06-04 08:38:27]   Matched by verse: 476
+[2026-06-04 08:38:27]   Assigned chapter commentary: 51077
+[2026-06-04 08:38:27]   Chapter not found: 69662
+[2026-06-04 08:38:27] 
+----------------------------------------
+[2026-06-04 08:38:27] Merging Ramayana Hindi...
+[2026-06-04 08:38:28]   Matched and updated: 12146
+[2026-06-04 08:38:28]   Not found: 10286
+[2026-06-04 08:38:28] 
+----------------------------------------
+[2026-06-04 08:38:28] Generating Mahabharata Hindi standalone dataset...
+[2026-06-04 08:38:30]   Saved 98701 verses to D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_mahabharata_hindi.jsonl
+[2026-06-04 08:38:30] 
+----------------------------------------
+[2026-06-04 08:38:30] Generating Ramayana Hindi standalone dataset...
+[2026-06-04 08:38:31]   Saved 19828 verses to D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_ramayana_hindi.jsonl
+[2026-06-04 08:38:31] 
+----------------------------------------
+[2026-06-04 08:38:31] Saving merged dataset...
+[2026-06-04 08:38:34]   Saved 165443 entries to D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_complete_hindi.jsonl
+[2026-06-04 08:38:34] 
+----------------------------------------
+[2026-06-04 08:38:34] Computing statistics...
+[2026-06-04 08:38:34]   Statistics saved to D:\hacker\vedrishi\vedrishi-ai\dataset\final\hindi_merge_stats.json
+[2026-06-04 08:38:34] 
+============================================================
+[2026-06-04 08:38:34] HINDI MERGE SUMMARY
+[2026-06-04 08:38:34] ============================================================
+[2026-06-04 08:38:34]   Total entries in merged dataset: 165443
+[2026-06-04 08:38:34] 
+[2026-06-04 08:38:34]   MAHABHARATA:
+[2026-06-04 08:38:34]     Total: 142310
+[2026-06-04 08:38:34]     With Hindi: 51077 (35.89%)
+[2026-06-04 08:38:34]     Parsed verses from Hindi files: 98701
+[2026-06-04 08:38:34] 
+[2026-06-04 08:38:34]   RAMAYANA:
+[2026-06-04 08:38:34]     Total: 22432
+[2026-06-04 08:38:34]     With Hindi: 12146
+[2026-06-04 08:38:34]     Parsed verses from Hindi files: 19828
+[2026-06-04 08:38:34] 
+[2026-06-04 08:38:34]   GITA:
+[2026-06-04 08:38:34]     Total: 701
+[2026-06-04 08:38:34]     With Hindi: 700
+[2026-06-04 08:38:34] 
+[2026-06-04 08:38:34]   OUTPUT FILES:
+[2026-06-04 08:38:34]     1. D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_complete_hindi.jsonl
+[2026-06-04 08:38:34]     2. D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_mahabharata_hindi.jsonl
+[2026-06-04 08:38:34]     3. D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_ramayana_hindi.jsonl
+[2026-06-04 08:38:34]     4. D:\hacker\vedrishi\vedrishi-ai\dataset\final\hindi_merge_stats.json
+[2026-06-04 08:38:34] 
+============================================================
+[2026-06-04 08:38:34] HINDI MERGE COMPLETE
+[2026-06-04 08:38:34] ============================================================
+[2026-06-04 08:39:57] ============================================================
+[2026-06-04 08:39:57] VEDRISHI AI - HINDI TRANSLATION MERGER
+[2026-06-04 08:39:57] Started: 2026-06-04T08:39:57.826065
+[2026-06-04 08:39:57] ============================================================
+[2026-06-04 08:39:57] ============================================================
+[2026-06-04 08:39:57] PHASE 1: Parsing Mahabharata Hindi files
+[2026-06-04 08:39:57] ============================================================
+[2026-06-04 08:39:57] Found 18 Hindi files: ['1.utf8', '2.utf8', '3.utf8', '4.utf8', '5.utf8', '6.utf8', '7.utf8', '8.utf8', '9.utf8', '10.utf8', '11.utf8', '12.utf8', '13.utf8', '14.utf8', '15.utf8', '16.utf8', '17.utf8', '18.utf8']
+[2026-06-04 08:39:57]   Processing 1.utf8 (Parva 1: Adi Parva)
+[2026-06-04 08:39:58]   Processing 2.utf8 (Parva 2: Sabha Parva)
+[2026-06-04 08:39:58]   Processing 3.utf8 (Parva 3: Vana Parva)
+[2026-06-04 08:39:58]   Processing 4.utf8 (Parva 4: Virata Parva)
+[2026-06-04 08:39:58]   Processing 5.utf8 (Parva 5: Udyoga Parva)
+[2026-06-04 08:39:58]   Processing 6.utf8 (Parva 6: Bhishma Parva)
+[2026-06-04 08:39:58]   Processing 7.utf8 (Parva 7: Drona Parva)
+[2026-06-04 08:39:58]   Processing 8.utf8 (Parva 8: Karna Parva)
+[2026-06-04 08:39:58]   Processing 9.utf8 (Parva 9: Shalya Parva)
+[2026-06-04 08:39:58]   Processing 10.utf8 (Parva 10: Sauptika Parva)
+[2026-06-04 08:39:58]   Processing 11.utf8 (Parva 11: Stri Parva)
+[2026-06-04 08:39:58]   Processing 12.utf8 (Parva 12: Shanti Parva)
+[2026-06-04 08:39:59]   Processing 13.utf8 (Parva 13: Anushasana Parva)
+[2026-06-04 08:39:59]   Processing 14.utf8 (Parva 14: Ashvamedhika Parva)
+[2026-06-04 08:39:59]   Processing 15.utf8 (Parva 15: Ashramavasika Parva)
+[2026-06-04 08:39:59]   Processing 16.utf8 (Parva 16: Mausala Parva)
+[2026-06-04 08:39:59]   Processing 17.utf8 (Parva 17: Mahaprasthanika Parva)
+[2026-06-04 08:39:59]   Processing 18.utf8 (Parva 18: Svargarohana Parva)
+[2026-06-04 08:39:59] 
+  Total chapters with data: 2312
+[2026-06-04 08:39:59]   Total verse references found: 98701
+[2026-06-04 08:39:59]     Parva 1 (Adi Parva): 260 chapters, 11259 verses
+[2026-06-04 08:39:59]     Parva 2 (Sabha Parva): 103 chapters, 4364 verses
+[2026-06-04 08:39:59]     Parva 3 (Vana Parva): 315 chapters, 12492 verses
+[2026-06-04 08:39:59]     Parva 4 (Virata Parva): 78 chapters, 3575 verses
+[2026-06-04 08:39:59]     Parva 5 (Udyoga Parva): 196 chapters, 6949 verses
+[2026-06-04 08:39:59]     Parva 6 (Bhishma Parva): 122 chapters, 6039 verses
+[2026-06-04 08:39:59]     Parva 7 (Drona Parva): 201 chapters, 10244 verses
+[2026-06-04 08:39:59]     Parva 8 (Karna Parva): 101 chapters, 5071 verses
+[2026-06-04 08:39:59]     Parva 9 (Shalya Parva): 66 chapters, 3665 verses
+[2026-06-04 08:39:59]     Parva 10 (Sauptika Parva): 18 chapters, 833 verses
+[2026-06-04 08:39:59]     Parva 11 (Stri Parva): 27 chapters, 840 verses
+[2026-06-04 08:39:59]     Parva 12 (Shanti Parva): 375 chapters, 15525 verses
+[2026-06-04 08:39:59]     Parva 13 (Anushasana Parva): 274 chapters, 11363 verses
+[2026-06-04 08:39:59]     Parva 14 (Ashvamedhika Parva): 118 chapters, 4604 verses
+[2026-06-04 08:39:59]     Parva 15 (Ashramavasika Parva): 9 chapters, 305 verses
+[2026-06-04 08:39:59]     Parva 16 (Mausala Parva): 41 chapters, 1118 verses
+[2026-06-04 08:39:59]     Parva 17 (Mahaprasthanika Parva): 3 chapters, 113 verses
+[2026-06-04 08:39:59]     Parva 18 (Svargarohana Parva): 5 chapters, 342 verses
+[2026-06-04 08:39:59] 
+============================================================
+[2026-06-04 08:39:59] PHASE 2: Searching for Ramayana Hindi resources
+[2026-06-04 08:39:59] ============================================================
+[2026-06-04 08:39:59]   Found Valmiki_Ramayan_Dataset - checking for Hindi translations...
+[2026-06-04 08:39:59]   Loaded 23402 entries from Valmiki dataset
+[2026-06-04 08:39:59]   Translation field appears to be Hindi (46/100 entries have Hindi markers)
+[2026-06-04 08:39:59]   Extracted 19828 Hindi gloss entries
+[2026-06-04 08:39:59]   Found snskrt-ramayan directory - checking for Hindi...
+[2026-06-04 08:40:01]   snskrt-ramayan sample keys: ['Kanda', 'Sarga', 'shlok_no', 'shlok', 'translation']
+[2026-06-04 08:40:02] 
+============================================================
+[2026-06-04 08:40:02] PHASE 3: Loading existing dataset
+[2026-06-04 08:40:02] ============================================================
+[2026-06-04 08:40:04]   Loaded 165443 total entries
+[2026-06-04 08:40:04]     Mahabharata: 142310
+[2026-06-04 08:40:04]     Ramayana: 22432
+[2026-06-04 08:40:04]     Gita: 701
+[2026-06-04 08:40:04] 
+----------------------------------------
+[2026-06-04 08:40:04] Merging Mahabharata Hindi...
+[2026-06-04 08:40:04]   Built index of 90602 unique Sanskrit verses from Hindi files
+[2026-06-04 08:40:25]   Updated: 51077
+[2026-06-04 08:40:25]   Matched by verse: 476
+[2026-06-04 08:40:25]   Assigned chapter commentary: 51077
+[2026-06-04 08:40:25]   Chapter not found: 69662
+[2026-06-04 08:40:25] 
+----------------------------------------
+[2026-06-04 08:40:25] Merging Ramayana Hindi...
+[2026-06-04 08:40:26]   Matched and updated: 12146
+[2026-06-04 08:40:26]   Not found: 10286
+[2026-06-04 08:40:26] 
+----------------------------------------
+[2026-06-04 08:40:26] Generating Mahabharata Hindi standalone dataset...
+[2026-06-04 08:40:28]   Saved 98701 verses to D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_mahabharata_hindi.jsonl
+[2026-06-04 08:40:28] 
+----------------------------------------
+[2026-06-04 08:40:28] Generating Ramayana Hindi standalone dataset...
+[2026-06-04 08:40:30]   Saved 19828 verses to D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_ramayana_hindi.jsonl
+[2026-06-04 08:40:30] 
+----------------------------------------
+[2026-06-04 08:40:30] Saving merged dataset...
+[2026-06-04 08:40:33]   Saved 165443 entries to D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_complete_hindi.jsonl
+[2026-06-04 08:40:33] 
+----------------------------------------
+[2026-06-04 08:40:33] Computing statistics...
+[2026-06-04 08:40:34]   Statistics saved to D:\hacker\vedrishi\vedrishi-ai\dataset\final\hindi_merge_stats.json
+[2026-06-04 08:40:34] 
+============================================================
+[2026-06-04 08:40:34] HINDI MERGE SUMMARY
+[2026-06-04 08:40:34] ============================================================
+[2026-06-04 08:40:34]   Total entries in merged dataset: 165443
+[2026-06-04 08:40:34] 
+[2026-06-04 08:40:34]   MAHABHARATA:
+[2026-06-04 08:40:34]     Total: 142310
+[2026-06-04 08:40:34]     With Hindi: 51077 (35.89%)
+[2026-06-04 08:40:34]     Parsed verses from Hindi files: 98701
+[2026-06-04 08:40:34] 
+[2026-06-04 08:40:34]   RAMAYANA:
+[2026-06-04 08:40:34]     Total: 22432
+[2026-06-04 08:40:34]     With Hindi: 12146
+[2026-06-04 08:40:34]     Parsed verses from Hindi files: 19828
+[2026-06-04 08:40:34] 
+[2026-06-04 08:40:34]   GITA:
+[2026-06-04 08:40:34]     Total: 701
+[2026-06-04 08:40:34]     With Hindi: 700
+[2026-06-04 08:40:34] 
+[2026-06-04 08:40:34]   OUTPUT FILES:
+[2026-06-04 08:40:34]     1. D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_complete_hindi.jsonl
+[2026-06-04 08:40:34]     2. D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_mahabharata_hindi.jsonl
+[2026-06-04 08:40:34]     3. D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_ramayana_hindi.jsonl
+[2026-06-04 08:40:34]     4. D:\hacker\vedrishi\vedrishi-ai\dataset\final\hindi_merge_stats.json
+[2026-06-04 08:40:34] 
+============================================================
+[2026-06-04 08:40:34] HINDI MERGE COMPLETE
+[2026-06-04 08:40:34] ============================================================
