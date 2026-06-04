@@ -42,12 +42,20 @@ env/
 *.pth
 *.onnx
 
-# Dataset files (keep processed, ignore raw)
+# Dataset files (keep processed, ignore raw and large files)
 dataset/raw/*
 !dataset/raw/.gitkeep
 dataset/processed/*_sanitized.jsonl
 dataset/final/*_sanitized.jsonl
 dataset/instruction-pairs/*_sanitized.jsonl
+
+# Large dataset files (use Git LFS or download separately)
+dataset/final/vedrishi_complete.json
+dataset/final/vedrishi_complete.jsonl
+dataset/processed/vedrishi_gita_clean.jsonl
+dataset/processed/vedrishi_ramayana_clean.jsonl
+dataset/processed/vedrishi_mahabharata_clean.jsonl
+dataset/instruction-pairs/vedrishi_instruction_pairs.jsonl
 
 # Training outputs
 training/outputs/vedrishi_unsloth_format.jsonl
