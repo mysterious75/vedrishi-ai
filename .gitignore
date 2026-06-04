@@ -72,3 +72,12 @@ training/outputs/vedrishi_val.jsonl
 # MemePalace submodule (keep reference, ignore contents)
 vendor/mempalace/*
 !vendor/mempalace/.gitkeep
+
+# Large ML dataset files (on Kaggle dataset)
+dataset/final/vedrishi_complete_hindi.jsonl
+dataset/final/vedrishi_mahabharata_hindi.jsonl
+dataset/final/vedrishi_ramayana_hindi.jsonl
+kaggle-dataset/vedrishi_train.jsonl
+kaggle-dataset/vedrishi_val.jsonl
+training/outputs/vedrishi_train.jsonl
+training/outputs/vedrishi_val.jsonl
