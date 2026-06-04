@@ -1,16 +1,16 @@
 {
-  "total_pairs": 74050,
+  "total_pairs": 93400,
   "by_text_type": {
-    "gita": 1618,
-    "ramayana": 22432,
+    "gita": 1603,
+    "ramayana": 41797,
     "mahabharata": 50000
   },
   "by_type": {
     "verse_explanation": 701,
-    "practical_guidance": 701,
-    "daily_guidance": 216,
+    "practical_guidance": 42279,
+    "daily_guidance": 201,
     "character_wisdom": 22432,
-    "wisdom": 50000
+    "wisdom": 27787
   },
-  "timestamp": "2026-06-04T08:41:09.957567"
+  "timestamp": "2026-06-04T10:03:34.111342"
 }

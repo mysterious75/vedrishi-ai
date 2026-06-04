@@ -45,3 +45,28 @@ Statistics:
 ============================================================
 [2026-06-04 08:41:09] INSTRUCTION PAIR GENERATION COMPLETE
 [2026-06-04 08:41:09] ============================================================
+[2026-06-04 10:03:29] VEDRISHI AI - INSTRUCTION PAIR GENERATOR (V2 - Hindi Enhanced)
+[2026-06-04 10:03:29] ============================================================
+[2026-06-04 10:03:31] Loaded 165443 verses from final dataset
+[2026-06-04 10:03:31] Gita: 701, Ramayana: 22432, Mahabharata: 142310
+[2026-06-04 10:03:31]   Gita with Hindi: 700/701
+[2026-06-04 10:03:31]   Ramayana with Hindi: 18630/22432
+[2026-06-04 10:03:31]   Mahabharata with Hindi: 51077/142310
+[2026-06-04 10:03:31] Generating Gita instruction pairs...
+[2026-06-04 10:03:32]   Generated 1603 Gita pairs
+[2026-06-04 10:03:32] Generating Ramayana instruction pairs...
+[2026-06-04 10:03:32]   Generated 41797 Ramayana pairs
+[2026-06-04 10:03:32] Generating Mahabharata instruction pairs...
+[2026-06-04 10:03:32]   Generated 50000 Mahabharata pairs
+[2026-06-04 10:03:32] 
+Total instruction pairs: 93400
+[2026-06-04 10:03:34] Saved 93400 pairs to D:\hacker\vedrishi\vedrishi-ai\dataset\instruction-pairs\vedrishi_instruction_pairs.jsonl
+[2026-06-04 10:03:34] 
+Statistics:
+[2026-06-04 10:03:34]   Total pairs: 93400
+[2026-06-04 10:03:34]   By text type: {'gita': 1603, 'ramayana': 41797, 'mahabharata': 50000}
+[2026-06-04 10:03:34]   By type: {'verse_explanation': 701, 'practical_guidance': 42279, 'daily_guidance': 201, 'character_wisdom': 22432, 'wisdom': 27787}
+[2026-06-04 10:03:34] 
+============================================================
+[2026-06-04 10:03:34] INSTRUCTION PAIR GENERATION COMPLETE
+[2026-06-04 10:03:34] ============================================================

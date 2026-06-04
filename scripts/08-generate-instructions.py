@@ -179,17 +179,20 @@ def generate_gita_pairs(verses, max_pairs=20000):
     log(f"  Generated {len(pairs)} Gita pairs")
     return pairs
 
-def generate_ramayana_pairs(verses, max_pairs=15000):
+def generate_ramayana_pairs(verses, max_pairs=50000):
     """Generate instruction pairs from Ramayana verses"""
     log("Generating Ramayana instruction pairs...")
     
     pairs = []
+    topics = ['धर्म', 'भक्ति', 'कर्तव्य', 'सत्य', 'निष्ठा', 'त्याग', 'प्रेम', 'बलिदान']
     
     for verse in verses:
         if len(pairs) >= max_pairs:
             break
         
         sanskrit = verse.get('sanskrit', '')
+        hindi = verse.get('hindi', '')
+        english = verse.get('english', '')
         kanda = verse.get('reference', {}).get('kanda', '')
         sarga = verse.get('reference', {}).get('chapter', '')
         verse_num = verse.get('reference', {}).get('verse', '')
@@ -202,11 +205,13 @@ def generate_ramayana_pairs(verses, max_pairs=15000):
         
         # Type 1: Character wisdom
         template = random.choice(RAMAYANA_TEMPLATES['character'])
+        hindi_out = f"\n\n{hindi}" if hindi else ""
+        english_out = f"\n\n{english}" if english else ""
         
         pairs.append({
             'instruction': template,
             'input': '',
-            'output': f"{opening}रामायण के अनुसार:\n\n{sanskrit}\n\nयह श्लोक {kanda} कांड, सर्ग {sarga} में है।{closing}{DISCLAIMER}",
+            'output': f"{opening}रामायण के अनुसार:\n\n{sanskrit}{hindi_out}{english_out}\n\nयह श्लोक {kanda} कांड, सर्ग {sarga} में है।{closing}{DISCLAIMER}",
             'metadata': {
                 'text_type': 'ramayana',
                 'kanda': kanda,
@@ -215,21 +220,41 @@ def generate_ramayana_pairs(verses, max_pairs=15000):
                 'type': 'character_wisdom'
             }
         })
+        
+        # Type 2: Seeking advice
+        if hindi or english:
+            template = random.choice(RAMAYANA_TEMPLATES['seeking_advice'])
+            topic = random.choice(topics)
+            inst = template.format(topic=topic, problem=topic)
+            pairs.append({
+                'instruction': inst,
+                'input': '',
+                'output': f"{opening}रामायण के अनुसार:\n\n{sanskrit}{hindi_out}{english_out}{closing}{DISCLAIMER}",
+                'metadata': {
+                    'text_type': 'ramayana',
+                    'kanda': kanda,
+                    'sarga': sarga,
+                    'verse': verse_num,
+                    'type': 'practical_guidance'
+                }
+            })
     
     log(f"  Generated {len(pairs)} Ramayana pairs")
     return pairs
 
-def generate_mahabharata_pairs(verses, max_pairs=15000):
+def generate_mahabharata_pairs(verses, max_pairs=50000):
     """Generate instruction pairs from Mahabharata verses"""
     log("Generating Mahabharata instruction pairs...")
     
     pairs = []
+    topics = ['कर्म', 'धर्म', 'नीति', 'सत्य', 'शक्ति', 'नेतृत्व', 'त्याग', 'बलिदान', 'मोक्ष', 'युद्ध']
     
     for verse in verses:
         if len(pairs) >= max_pairs:
             break
         
         sanskrit = verse.get('sanskrit', '')
+        hindi = verse.get('hindi', '')
         english = verse.get('english', '')
         parva = verse.get('reference', {}).get('parva', '')
         verse_num = verse.get('reference', {}).get('verse', '')
@@ -240,18 +265,15 @@ def generate_mahabharata_pairs(verses, max_pairs=15000):
         opening = random.choice(GURU_OPENINGS)
         closing = random.choice(GURU_CLOSINGS)
         
+        hindi_out = f"\n\nहिंदी: {hindi}" if hindi else ""
+        english_out = f"\n\nEnglish: {english}" if english else ""
+        
         # Type 1: Wisdom
         template = random.choice(MAHABHARATA_TEMPLATES['wisdom'])
-        
-        output_text = f"{opening}महाभारत के अनुसार:\n\n{sanskrit}"
-        if english:
-            output_text += f"\n\n{english}"
-        output_text += f"\n\nयह {parva} पर्व में है।{closing}{DISCLAIMER}"
-        
         pairs.append({
             'instruction': template,
             'input': '',
-            'output': output_text,
+            'output': f"{opening}महाभारत के अनुसार:\n\n{sanskrit}{hindi_out}{english_out}\n\nयह {parva} पर्व में है।{closing}{DISCLAIMER}",
             'metadata': {
                 'text_type': 'mahabharata',
                 'parva': parva,
@@ -259,6 +281,23 @@ def generate_mahabharata_pairs(verses, max_pairs=15000):
                 'type': 'wisdom'
             }
         })
+        
+        # Type 2: Seeking advice (if has hindi or english)
+        if hindi or english:
+            topic = random.choice(topics)
+            template = random.choice(MAHABHARATA_TEMPLATES['seeking_advice'])
+            inst = template.format(topic=topic, problem=topic)
+            pairs.append({
+                'instruction': inst,
+                'input': '',
+                'output': f"{opening}महाभारत के अनुसार:\n\n{sanskrit}{hindi_out}{english_out}{closing}{DISCLAIMER}",
+                'metadata': {
+                    'text_type': 'mahabharata',
+                    'parva': parva,
+                    'verse': verse_num,
+                    'type': 'practical_guidance'
+                }
+            })
     
     log(f"  Generated {len(pairs)} Mahabharata pairs")
     return pairs
