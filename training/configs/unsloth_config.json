@@ -1,0 +1,55 @@
+{
+  "project_name": "vedrishi-ai",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "training_method": "qlora",
+  "dataset": {
+    "train_file": "vedrishi_train.jsonl",
+    "val_file": "vedrishi_val.jsonl",
+    "format": "alpaca",
+    "total_pairs": 31647
+  },
+  "hyperparameters": {
+    "learning_rate": 0.0002,
+    "num_epochs": 3,
+    "batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "warmup_steps": 100,
+    "max_seq_length": 2048,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "quantization": "4bit",
+    "bf16": true,
+    "fp16": false,
+    "optimizer": "adamw_8bit",
+    "lr_scheduler": "cosine",
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0
+  },
+  "safety_config": {
+    "disclaimer_required": true,
+    "topic_filters": [
+      "medical_advice",
+      "legal_advice",
+      "financial_advice",
+      "political",
+      "controversial"
+    ],
+    "crisis_helplines": {
+      "iCall": "9152987821",
+      "VandrevalaFoundation": "1860-2662-345"
+    }
+  },
+  "output_dir": "vedrishi-qlora-output",
+  "wandb_project": "vedrishi-ai-training",
+  "created_at": "2026-06-04T07:41:36.993606"
+}

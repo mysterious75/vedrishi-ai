@@ -1,0 +1,140 @@
+# VEDRISHI AI - QLoRA Training Configuration
+# Base Model: Qwen 2.5 7B Instruct
+# Platform: Unsloth Cloud / Together AI
+
+# ===========================
+# MODEL CONFIGURATION
+# ===========================
+model:
+  name: "Qwen/Qwen2.5-7B-Instruct"
+  base_model: "Qwen2.5-7B-Instruct"
+  max_seq_length: 2048
+  dtype: null  # Auto-detect
+  load_in_4bit: true  # QLoRA quantization
+
+# ===========================
+# QLoRA CONFIGURATION
+# ===========================
+qlora:
+  r: 16  # Rank
+  lora_alpha: 32  # Alpha scaling
+  lora_dropout: 0.05
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+  bias: "none"
+  use_rslora: true  # Rank-Stabilized LoRA
+
+# ===========================
+# TRAINING CONFIGURATION
+# ===========================
+training:
+  output_dir: "./checkpoints"
+  num_train_epochs: 2  # Max to avoid overfitting
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 4
+  gradient_checkpointing: true
+  learning_rate: 2e-4
+  weight_decay: 0.01
+  warmup_steps: 100
+  lr_scheduler_type: "cosine"
+  max_grad_norm: 0.3
+  fp16: false
+  bf16: true  # Use bf16 for better precision
+  logging_steps: 10
+  save_strategy: "epoch"
+  evaluation_strategy: "epoch"
+  load_best_model_at_end: true
+  metric_for_best_model: "eval_loss"
+  greater_is_better: false
+
+# ===========================
+# DATASET CONFIGURATION
+# ===========================
+dataset:
+  train_file: "../dataset/instruction-pairs/instruction_pairs.jsonl"
+  val_split: 0.1  # 10% for validation
+  max_seq_length: 2048
+  preprocessing_num_workers: 4
+
+# ===========================
+# SYSTEM PROMPT (CRITICAL)
+# ===========================
+system_prompt: |
+  तुम 'वेद ऋषि' हो, एक आध्यात्मिक मार्गदर्शक।
+  
+  तुम्हारे नियम:
+  1. हमेशा 'वत्स', 'प्रणाम', या 'आयुष्मान भव' से शुरू करो
+  2. केवल गीता, उपनिषद, रामायण के ज्ञान पर आधारित उत्तर दो
+  3. कभी भी चिकित्सा, कानूनी, या वित्तीय सलाह मत दो
+  4. अगर उपयोगकर्ता आत्महत्या या हिंसा की बात करे, तो तुरंत हेल्पलाइन नंबर दो
+  5. कभी भी अंधविश्वास मत फैलाओ
+  6. हमेशा कर्म और ज्ञान पर जोर दो
+  7. सभी जीव एक आत्मा हैं - कोई भेदभाव मत करो
+  8. हर उत्तर में disclaimer दो: "यह एक AI मार्गदर्शक है"
+  
+  तुम्हारी भाषा:
+  - सरल हिंदी में बोलो
+  - दयालु और सहानुभूतिशील रहो
+  - उपदेशात्मक मत बनो
+  - व्यावहारिक सलाह दो
+
+# ===========================
+# DPO (DIRECT PREFERENCE OPTIMIZATION)
+# ===========================
+dpo:
+  enabled: true
+  beta: 0.1
+  loss_type: "sigmoid"
+  max_length: 1024
+  max_prompt_length: 512
+
+# ===========================
+# EVALUATION METRICS
+# ===========================
+evaluation:
+  metrics:
+    - "verse_accuracy"  # Correct verse citation
+    - "tone_score"  # Compassion, humility
+    - "safety_score"  # No harmful content
+    - "relevance_score"  # Response relevance
+  thresholds:
+    verse_accuracy: 0.92
+    tone_score: 0.85
+    safety_score: 1.0
+    relevance_score: 0.88
+
+# ===========================
+# SAFETY GUARDRAILS
+# ===========================
+guardrails:
+  block_keywords:
+    - "आत्महत्या"
+    - "suicide"
+    - "हिंसा"
+    - "violence"
+    - "जादू"
+    - "magic"
+    - "चमत्कार"
+    - "miracle"
+  redirect_to_helpline:
+    - "आत्महत्या"
+    - "मरना"
+    - "जीना नहीं चाहता"
+  helpline_numbers:
+    mental_health: "080-4611000"
+    suicide_prevention: "9152987821"
+
+# ===========================
+# DEPLOYMENT CONFIGURATION
+# ===========================
+deployment:
+  platform: "together_ai"  # or "huggingface"
+  api_endpoint: null  # Set after training
+  max_concurrent_requests: 10
+  rate_limit_per_user: 3  # Free tier

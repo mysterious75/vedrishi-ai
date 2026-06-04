@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Kaggle
+*.ipynb_checkpoints/
+
+# Model files
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+
+# Dataset files (keep processed, ignore raw)
+dataset/raw/*
+!dataset/raw/.gitkeep
+dataset/processed/*_sanitized.jsonl
+dataset/final/*_sanitized.jsonl
+dataset/instruction-pairs/*_sanitized.jsonl
+
+# Training outputs
+training/outputs/vedrishi_unsloth_format.jsonl
+training/outputs/vedrishi_train.jsonl
+training/outputs/vedrishi_val.jsonl
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+*.temp
+
+# MemePalace submodule (keep reference, ignore contents)
+vendor/mempalace/*
+!vendor/mempalace/.gitkeep

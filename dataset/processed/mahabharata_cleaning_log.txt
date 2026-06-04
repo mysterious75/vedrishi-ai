@@ -1,0 +1,31 @@
+[2026-06-04 07:37:35] VEDRISHI AI - MAHABHARATA DATA CLEANER
+[2026-06-04 07:37:35] ============================================================
+[2026-06-04 07:37:35] ============================================================
+[2026-06-04 07:37:35] MERGING ALL MAHABHARATA SOURCES
+[2026-06-04 07:37:35] ============================================================
+[2026-06-04 07:37:35] Loading DharmicData Mahabharata...
+[2026-06-04 07:37:37]   Loaded 73821 verses from DharmicData Mahabharata
+[2026-06-04 07:37:37] Loading snskrt-mahabharat...
+[2026-06-04 07:37:48]   Loaded 0 verses from snskrt-mahabharat
+[2026-06-04 07:37:48] Loading VedicRAG_AI Mahabharata...
+[2026-06-04 07:37:50]   Loaded 68710 verses from VedicRAG_AI Mahabharata
+[2026-06-04 07:37:50] 
+Total verses loaded: 142531
+[2026-06-04 07:37:50] Unique verses: 142470
+[2026-06-04 07:37:50] Duplicates removed: 61
+[2026-06-04 07:37:50] 
+============================================================
+[2026-06-04 07:37:50] QUALITY CHECK
+[2026-06-04 07:37:50] ============================================================
+[2026-06-04 07:37:51] Valid verses: 142435
+[2026-06-04 07:37:51] Issues: {'no_sanskrit': 19, 'too_short': 16}
+[2026-06-04 07:37:51] 
+============================================================
+[2026-06-04 07:37:51] SAVING CLEANED DATA
+[2026-06-04 07:37:51] ============================================================
+[2026-06-04 07:37:52] Saved 142435 verses to D:\hacker\vedrishi\vedrishi-ai\dataset\processed\vedrishi_mahabharata_clean.jsonl
+[2026-06-04 07:37:52] Statistics: {'total_verses': 142435, 'sources': ['VedicRAG_AI', 'DharmicData_Mahabharata'], 'with_hindi': 0, 'with_english': 68681, 'timestamp': '2026-06-04T07:37:52.312884'}
+[2026-06-04 07:37:52] 
+============================================================
+[2026-06-04 07:37:52] MAHABHARATA CLEANING COMPLETE
+[2026-06-04 07:37:52] ============================================================

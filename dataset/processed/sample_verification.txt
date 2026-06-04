@@ -1,0 +1,42 @@
+Total verses: 701
+
+Verse 1:
+  Chapter: 1
+  Verse: 1
+  Sanskrit: धृतराष्ट्र उवाच धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय।।1.1।।
+  Hindi: ।।1.1।। धृतराष्ट्र बोले (टिप्पणी प0 1.2) - हे संजय! (टिप्पणी प0 1.3) धर्मभूमि कुरुक्षेत्र में युद्ध की इच्छा से इकट्ठे हुए मेरेे और पाण्डु के पुत्रों ने भी क्या किया?
+  English: 1.1 Dhritarashtra said What did my people and the sons of Pandu do when they had assembled together eager for battle on the holy plain of Kurukshetra, O Sanjaya.
+  Source: DharmicData
+
+Verse 2:
+  Chapter: 1
+  Verse: 2
+  Sanskrit: सञ्जय उवाच दृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा। आचार्यमुपसङ्गम्य राजा वचनमब्रवीत्।।1.2।।
+  Hindi: ।।1.2।। संजय बोले - उस समय वज्रव्यूह-से खड़ी हुई पाण्डव-सेना को देखकर राजा दुर्योधन द्रोणाचार्य के पास जाकर यह वचन बोला।
+  English: 1.2. Sanjaya said Having seen the army of the Pandavas drawn up in battle-array, King Duryodhana then approached his teacher (Drona) and spoke these words.
+  Source: DharmicData
+
+Verse 3:
+  Chapter: 1
+  Verse: 3
+  Sanskrit: पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्। व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता।।1.3।।
+  Hindi: ।।1.3।। हे आचार्य! आपके बुद्धिमान् शिष्य द्रुपदपुत्र धृष्टद्युम्न के द्वारा व्यूहरचना से खड़ी की हुई पाण्डवों की इस बड़ी भारी सेना को देखिये
+  English: 1.3. "Behold, O Teacher! this mighty army of the sons of Pandu, arrayed by the son of Drupada, thy wise disciple.
+  Source: DharmicData
+
+Verse 4:
+  Chapter: 1
+  Verse: 4
+  Sanskrit: अत्र शूरा महेष्वासा भीमार्जुनसमा युधि। युयुधानो विराटश्च द्रुपदश्च महारथः।।1.4।।
+  Hindi: ।।1.4 -- 1.6।। यहाँ (पाण्डवों की सेना में) बड़े-बड़े शूरवीर हैं, जिनके बहुत बड़े-बड़े धनुष हैं तथा जो युद्ध में भीम और अर्जुनके समान हैं। उनमें युयुधान (सात्यकि), राजा विराट और महारथी द्रुपद भी हैं। ध
+  English: 1.4. Here are heroes, mighty archers, eal in battle to Bhima and Arjuna, Yoyudhana (Satyaki), Virata and Drupada, of the great car (mighty warriors).
+  Source: DharmicData
+
+Verse 5:
+  Chapter: 1
+  Verse: 5
+  Sanskrit: धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान्। पुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः।।1.5।।
+  Hindi: ।।1.4 -- 1.6।। यहाँ (पाण्डवों की सेना में) बड़े-बड़े शूरवीर हैं, जिनके बहुत बड़े-बड़े धनुष हैं तथा जो युद्ध में भीम और अर्जुनके समान हैं। उनमें युयुधान (सात्यकि), राजा विराट और महारथी द्रुपद भी हैं। ध
+  English: 1.5. "Dhrishtaketu, chekitana and the valiant king of Kasi, Purujit and Kuntibhoja and Saibya, the best men.
+  Source: DharmicData
+

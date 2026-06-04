@@ -1,0 +1,10 @@
+{
+  "total_verses": 142435,
+  "sources": [
+    "VedicRAG_AI",
+    "DharmicData_Mahabharata"
+  ],
+  "with_hindi": 0,
+  "with_english": 68681,
+  "timestamp": "2026-06-04T07:37:52.312884"
+}

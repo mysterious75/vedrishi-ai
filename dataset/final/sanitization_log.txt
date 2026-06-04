@@ -1,0 +1,19 @@
+[2026-06-04 07:50:29] ============================================================
+[2026-06-04 07:50:29] VEDRISHI AI - DATASET SANITIZATION
+[2026-06-04 07:50:29] ============================================================
+[2026-06-04 07:50:29] Sanitizing: D:\hacker\vedrishi\vedrishi-ai\dataset\processed\vedrishi_gita_clean.jsonl
+[2026-06-04 07:50:30]   Sanitized 701/701 entries
+[2026-06-04 07:50:30] Sanitizing: D:\hacker\vedrishi\vedrishi-ai\dataset\processed\vedrishi_ramayana_clean.jsonl
+[2026-06-04 07:50:32]   Sanitized 22432/22432 entries
+[2026-06-04 07:50:32] Sanitizing: D:\hacker\vedrishi\vedrishi-ai\dataset\processed\vedrishi_mahabharata_clean.jsonl
+[2026-06-04 07:50:45]   Sanitized 142435/142435 entries
+[2026-06-04 07:50:45] Sanitizing: D:\hacker\vedrishi\vedrishi-ai\dataset\final\vedrishi_complete.jsonl
+[2026-06-04 07:51:06]   Sanitized 165565/165565 entries
+[2026-06-04 07:51:06] Sanitizing: D:\hacker\vedrishi\vedrishi-ai\dataset\instruction-pairs\vedrishi_instruction_pairs.jsonl
+[2026-06-04 07:51:09]   Sanitized 31647/31647 entries
+[2026-06-04 07:51:09] 
+============================================================
+[2026-06-04 07:51:09] SANITIZATION COMPLETE
+[2026-06-04 07:51:09] ============================================================
+[2026-06-04 07:51:09] Files sanitized: 5
+[2026-06-04 07:51:09] Output directory: D:\hacker\vedrishi\vedrishi-ai\dataset\final

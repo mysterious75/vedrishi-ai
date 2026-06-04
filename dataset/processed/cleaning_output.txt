@@ -1,0 +1,31 @@
+﻿python : Traceback (most recent call last):
+At line:1 char:1
++ python "D:\hacker\vedrishi\vedrishi-ai\scripts\04-clean-gita.py" 2>&1 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\hacker\vedrishi\vedrishi-ai\scripts\04-clean-gita.py", line 26, in log
+    print(log_msg)
+    ~~~~~^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 22-23: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\hacker\vedrishi\vedrishi-ai\scripts\04-clean-gita.py", line 343, in <module>
+    main()
+    ~~~~^^
+  File "D:\hacker\vedrishi\vedrishi-ai\scripts\04-clean-gita.py", line 324, in main
+    log("\U0001f549\ufe0f  VEDRISHI AI - GITA DATA CLEANER")
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\hacker\vedrishi\vedrishi-ai\scripts\04-clean-gita.py", line 28, in log
+    print(log_msg.encode('utf-8', errors='replace').decode('utf-8'))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 22-23: character maps to <undefined>
